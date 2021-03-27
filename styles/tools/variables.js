@@ -1,12 +1,10 @@
 // Main Colors
 export const white = '#fff'
 export const black = '#000'
-export const blue = '#4389a2'
-export const purple = '#5c258d'
-export const teal = '#0fb8b8'
-export const green = '#2cac82'
-export const gold = '#d5bba4'
-export const link = '#0094ff'
+export const mint = '#c8eed9'
+export const darkBrown = '#4e3620'
+export const lightBrown = '#897853'
+export const cream = '#f8f4e1'
 
 // Neutrals
 export const neutral0 = '#fafdff'

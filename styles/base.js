@@ -1,23 +1,26 @@
 import styled, { css } from 'styled-components'
 import { flexContainer, flexItem } from './tools/mixins'
-import {
-  neutral3,
-  neutral5,
-  neutral6,
-  purple,
-  green,
-  sm,
-  md
-} from './tools/variables'
+import { darkBrown, cream, lightBrown } from './tools/variables'
 
 export const Nav = styled.div`
   width: 100%;
   height: 60px;
-  background-color: ${neutral5};
-  ${flexContainer('flex-end', 'center', 'center')}
+  background: linear-gradient(${darkBrown}, #2b1e13);
+  padding-right: 16px;
+  border-bottom: 1px solid #2b1e13;
+  box-shadow: 0 8px 8px -2px gray;
+  ${flexContainer('space-between', 'center', 'center')}
 
   a {
-    padding: 8px;
+    padding: 8px 16px;
+    color: ${cream};
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    &:hover {
+      border-bottom: 1px solid ${cream};
+    }
   }
 `
 
