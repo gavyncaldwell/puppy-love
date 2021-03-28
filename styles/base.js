@@ -1,22 +1,21 @@
 import styled, { css } from 'styled-components'
 import { flexContainer, flexItem } from './tools/mixins'
-import { darkBrown, cream, lightBrown } from './tools/variables'
+import { darkBrown, cream, lightBrown, neutral6 } from './tools/variables'
 
 export const Nav = styled.div`
   width: 100%;
   height: 60px;
   background: linear-gradient(${darkBrown}, #2b1e13);
-  padding-right: 16px;
   border-bottom: 1px solid #2b1e13;
-  box-shadow: 0 8px 8px -2px gray;
-  ${flexContainer('space-between', 'center', 'center')}
+  box-shadow: 0 2px 8px -2px #000;
+  ${flexContainer('center', 'center', 'center')}
 
   a {
     padding: 8px 16px;
     color: ${cream};
     transition: background-color 0.3s;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
 
     &:hover {
       border-bottom: 1px solid ${cream};
@@ -24,15 +23,44 @@ export const Nav = styled.div`
   }
 `
 
-// export const container = styled.div`
-//   width: 100%;
-//   height: 100%;
+export const Container = styled.div`
+  width: 100%;
+  height: 100%;
+`
 
-//   @media (mix-width: 1920px) {
-//     padding-left: calc(50% - 960px);
-//     padding-right: calc(50% - 960px);
-//   }
-// `
+export const Hero = styled.div`
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  ${flexContainer('center')}
+
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: ${neutral6};
+    opacity: 0.6;
+    z-index: -50;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  > video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+  }
+`
 
 // export const Page = styled.div`
 //   max-width: 1920px;

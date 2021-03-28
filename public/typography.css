@@ -1,7 +1,7 @@
 body,
 input {
   color: #2f2f2f;
-  font-family: 'Lato', sans-serif;
+  font-family: 'New Tegomin', serif;
   font-weight: 400;
   word-spacing: 2px;
 }
@@ -16,13 +16,13 @@ p,
 li,
 span {
   margin: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'New Tegomin', serif;
+  font-weight: 600;
 }
 
 a,
 a * {
-  color: #0fb8b8;
+  color: #c8eed9;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
